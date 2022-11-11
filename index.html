@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/lbs/css/bootstrap.min.css">
+<link rel="stylesheet" href="./assets/style/style.css">
+  <title>click</title>
+</head>
+<body>
+  <header class="header1">
+    <div class="header1-top">
+        <div class="container header1-top_container">
+            <div class="header1-top-left">
+                <div class="header1-top-logo">
+                    <a href="https://click.uz/uz" class="mainHeaderFlexTopLogoLink">
+                        <img src="https://click.uz/click/images/logo-new.png" alt="Click Evolution" class="mainHeaderFlexTopLogoLinkImage">
+                    </a>
+                    <div class="mainHeaderFlexTopLogoMouse" style="display: none;">
+                        <div class="mainHeaderFlexTopLogoMouseLinks">
+                            <a href="https://click.uz/uz" target="_blank">Havola bo&#039;yicha o&#039;tish</a>
+                            <a href="https://www.notion.so/Click-ce258b9906fc442f9055171eb09b2805" target="_blank">Uslub bo&#039;yicha qo&#039;llanma va logotiplar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header1-top-btns header1-top-btn-home">
+                    <div class="header1-top-btns-item header1-top-btns-cashback">
+                        <a href="https://click.uz/uz/cashback" class="header1-top-btns-item-link">
+                            <span class="header1-top-btns-item-name">Cashback</span>
+                            <img src="https://click.uz/click/images/coins1.svg" alt="" class="header1-top-btns-item-img">
+                        </a>
+                    </div>
+                    <div class="header1-top-btns-item header1-top-btns-market">
+                        <a href="https://market.click.uz/uz" class="header1-top-btns-item-link">
+                            <span class="header1-top-btns-item-name">Click Market</span>
+                            <img src="https://click.uz/click/images/pakets1.svg" alt="" class="header1-top-btns-item-img">
+                        </a>
+                    </div>
+                    <div class="header1-top-btns-item header1-top-btns-sale">
+                        <a href="https://click.uz/uz/news/125/akciya-dlya-passazhirov-avtobusov-gtashkent" class="header1-top-btns-item-link"><span class="header1-top-btns-item-name">Aksiyalar</span><img src="https://click.uz/click/images/box.svg" alt="" class="header1-top-btns-item-img"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header1-top-right">
+                <div class="header1-top-call">
+                    <span class="header1-top-call-text">call-markaz</span>
+                    <a href="tel:998712310880" class="header1-top-call-link">71 231 0880</a>
+                </div>
+                <div class="mainHeaderFlexTopMenuLang header1-top-lang">
+                    <ul>
+                        <li><a href="https://click.uz/lang/uz" class="mainHeaderFlexTopMenuLangLink active">UZ</a></li>
+                        <li><a href="https://click.uz/lang/ru" class="mainHeaderFlexTopMenuLangLink ">РУ</a></li>
+                        <li><a href="https://click.uz/lang/en" class="mainHeaderFlexTopMenuLangLink ">EN</a></li>
+                    </ul>
+                </div>
+                <div class="header1-top-search">
+                    <form action="https://click.uz/uz/news" method="get">
+                        <input type="hidden" name="_token" value="9CF8tIOKzzu6disdbaN4QTnFXwFwvYpz3hGS8qPd">                            <div class="searchTop">
+                            <input type="text" name="search" style="display: none;" id="searchTopInput" placeholder="Что ищем?">
+                            <div id="searchTopButton"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="header1-top-login">
+                    <a href="https://my.click.uz" title="Shaxsiy kabinet"><img src="https://click.uz/click/images/login1.svg" alt="Shaxsiy kabinet"></a>
+                </div>
+                <div class="header1-top-burger">
+                    <div class="header1-top-burger-button"></div>
+                    <div class="header1-top-burger-button-box" style="display: none;">
+                        <div class="row">
+                            <div class="col-md-60">
+                                <div class="row">
+                                    <div class="col-md-25">
+                                        <div class="header1-top-burger-button-box-nav nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="header1-top-burger-button-box-nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Xizmat haqida</a>
+                                            <a class="header1-top-burger-button-box-nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Yordam</a>
+                                            <a class="header1-top-burger-button-box-nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Hamkorlarga</a>
+                                            <a class="header1-top-burger-button-box-nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Xizmatlar</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-35">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                                <div class="header1-top-burger-button-box-body">
+                                                    <ul>
+                                                        <li><a href="https://click.uz/uz/about">Kompaniya haqida</a></li>
+                                                        <li><a href="https://click.uz/uz/system-description-and-capabilities">Tizimning tavsifi va imkoniyatlari haqida</a></li>
+                                                        <li><a href="https://click.uz/uz/news">Yangiliklar</a></li>
+                                                        <li><a href="https://click.uz/uz/tarifs">Tariflar</a></li>
+                                                        <li><a href="https://click.uz/uz/secure">Xavfsizlik</a></li>
+                                                        <li><a href="https://click.uz/uz/vacancies">Bo&#039;sh ish o&#039;rinlari</a></li>
+                                                        <li><a href="https://click.uz/uz/terms">Ommaviy oferta</a></li>
+                                                        <li><a href="https://click.uz/uz/contacts">Kontaktlar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                                <div class="header1-top-burger-button-box-body">
+                                                    <ul>
+                                                        <li><a href="https://click.uz/click/click_evolution.pdf">«Click Evolution foydalanuvchisi uchun yo&#039;riqnoma</a></li>
+                                                        <li><a href="https://click.uz/click/click_telegram.pdf">@clickuz Telegram-boti foydalanuvchisi uchun yo&#039;riqnoma</a></li>
+                                                        <li><a href="https://click.uz/click/click_ussd.pdf">Click USSD-menyu foydalanuvchisi uchun yo&#039;riqnoma</a></li>
+                                                        <li><a href="https://click.uz/click/click_web.pdf">my.click.uz veb-interfeys foydalanuvchisi uchun yo&#039;riqnoma</a></li>
+                                                        <li><a href="https://click.uz/uz/faq">Tez-tez so&#039;raladigan savollar</a></li>
+                                                        <li><a href="https://click.uz/uz/privacy">Maxfiylik siyosati</a></li>
+                                                        <li><a href="https://docs.click.uz/" target="_blank">Dasturchilar uchun</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                                <div class="header1-top-burger-button-box-body">
+                                                    <ul>
+                                                        <li><a href="https://click.uz/uz/partners?#terminal">Terminal</a></li>
+                                                        <li><a href="https://click.uz/uz/partners?#pay">To&#039;lov</a></li>
+                                                        <li><a href="https://click.uz/uz/partners?#features">Afzalliklar</a></li>
+                                                        <li><a href="https://click.uz/uz/partners?#banks">Bank uchun</a></li>
+                                                        <li><a href="https://click.uz/uz/partners?#works">Qulayliklar</a></li>
+                                                        <li><a href="https://click.uz/uz/partners?#partners">Hamkorlar</a></li>
+                                                        <li><a href="https://click.uz/uz/partners?#contacts">Kontaktlar</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                                <div class="header1-top-burger-button-box-body">
+                                                    <ul>
+                                                        <li><a href="https://click.uz/uz/wallet">Click hamyon</a></li>
+                                                        <li><a href="https://click.uz/uz/auto-payment">«Avtoto&#039;lov» xizmati</a></li>
+                                                        <li><a href="https://click.uz/uz/payment-on-spot">Joylarda to&#039;lov</a></li>
+                                                        <li><a href="https://click.uz/uz/telegrambot">Telegram-bot</a></li>
+                                                        <li><a href="https://click.uz/uz/express-payment">Ekspress-to&#039;lov</a></li>
+                                                        <li><a href="https://click.uz/uz/services-events">«Hodisa» xizmati</a></li>
+                                                        <li><a href="https://click.uz/uz/service-my-receipts">«Mening kvitansiyalarim» xizmati</a></li>
+                                                        <li><a href="https://click.uz/uz/perevod-s-karti-na-kartu">Kartadan kartaga pul o&#039;tqazish</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div  class="container ">
+      <div class="row">
+      <div data-aos="zoom-in" class="col-lg-6 ">
+        <img class="img1" src="./assets/img/clickstart.png" alt="">
+      </div>
+<div data-aos="zoom-in" class="col-lg-6 mt-200">
+  <p class="p1">
+    Click Start
+  </p>
+  <p class="p2">Bolalaringiz uchun yangi imkoniyatlardan foydalaning</p>
+  <a class="batafsil" href="https://click.uz/uz/clickstart/">Batafsil</a>
+  <div class="img">
+    <img class="imgapp" src="./assets/img/android.png" alt="">
+    <img class="imgapp"  src="./assets/img/ios.png" alt="">
+  </div>
+
+
+
+    <li class="footer-bottom-li">
+        <a class="a16" href="">Facebook</a>
+
+      <a class="a16" href="">Instagram</a>
+
+      <a class="a16" href="">Telegram</a></li>
+
+</div>
+
+<div data-aos="zoom-in" class="col-lg-4">
+    <img class="imgphone" src="./assets/img/evo-new.png" alt="">
+  </div>
+<div data-aos="zoom-in" class="col-lg-8 col-md-12 col-sm-12 mt-200">
+<p class="p1">
+    Yangi Click Evolution
+</p>
+<p class="p3">Smartfoningiz uchun maxsus va zamonaviy ilova. Yuklab oling va qulay interfeys orqali to'lashni va pul o'tkazishni boshlang. Ilovamizning eng oxirgi qulayliklaridan foydalanish uchun esa uni tez-tez yangilab turishni unutmang!</p>
+<p class="p4">   Hozir yuklab olish</p>
+<div class="img">
+<img class="imgapp" src="./assets/img/android.png" alt="">
+<img class="imgapp"  src="./assets/img/ios.png" alt="">
+<img class="imgapp"  src="./assets/img/appgalery.png" alt="">
+</div>
+
+</div>
+<div data-aos="zoom-in" class="col-lg-6">
+    <img class="imgphone2" src="./assets/img/mainWallet.png" alt="">
+  </div>
+<div data-aos="zoom-in" class="col-lg-6 col-sm-12 col-md-12 col-12 row mt-lg-5    ">
+<p class="p1">
+    Click-hamyon
+</p>
+
+<p class="p5">   Yangi imkoniyatlarni ishlating</p>
+<div class="d-flex flex-lg-row justify-content-md-around  mleft  justify-content-sm-around flex-column">
+<div class="col-lg-2     col-sm-2 m-lg-4 col-12">
+    <img class="img11" src="https://click.uz/click/images/home/wallet1.svg" alt>
+<p class="p6" >Pul
+    o'tqazing</p>
+</div>
+<div class="col-lg-3 col-sm-3 mt-lg-4 col-12">
+<img  class="img11" src="https://click.uz/click/images/home/wallet2.svg" alt>
+<p class="p6" >Xarid va xizmatlarga
+    to'lang</p>
+</div>
+<div class="col-lg-2 col-sm-2 mt-lg-4  col-12">
+<img  class="img11" src="https://click.uz/click/images/home/wallet3.svg" alt>
+    <p class="p6" >CASHBACK
+        oling</p>
+    </div></div>
+    <div class="col-lg-2">
+<a href="" class="button">Batafsil</a></div>
+</div>
+
+
+<div data-aos="zoom-in" class="col-lg-6  row mt-200">
+<p class="p1">
+    Click kartasiga ega bo'ling
+</p>
+<a class="acashback" href="">2%gacha CASHBACK oling</a>
+<div class="d-flex ">
+    <a class="acashback2" href="">Buyurtma berish</a>
+</div>
+
+
+    <img class="card" src="./assets/img/uzcard.jpg" alt="">
+    <img class="card" src="./assets/img/humo.png" alt="">
+</div>
+
+<div data-aos="zoom-in" class="col-lg-6 col-md-12 mt-200">
+    <img class="cardclick" src="./assets/img/clickcard.jpg" alt="">
+  </div>
+
+
+  <div data-aos="zoom-in" class="col-lg-6 col-sm-12 row mt-200">
+    <p class="p1">
+        Eng yirik to'lov tashkilotining
+    </p>
+    <a class="acashback" href="">hamkoriga aylaning</a>
+
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-12">
+        <img class="photo" src="./assets/img/humans.jpg" alt="">
+<p class="p29">7 500 000</p>
+<p class="p20">faol
+    foydalanuvchilar</p>
+    </div>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-12">
+        <img class="photo" src="./assets/img/center.jpg" alt="">
+        <p class="p29">Doimiy</p>
+        <p class="p20">marketing
+            qo'llab-quvvatlash</p>
+    </div>
+    <div class="col-lg-7">
+        <a href class="button1">Batafsil</a></div>
+            </div>
+
+    <div data-aos="zoom-in" class="col-lg-6 mt-200">
+        <img class="imgnotebook" src="./assets/img/partner.png" alt="">
+      </div>
+<div class="col-lg-12">
+    <p class="p40"> Yangilangan xizmatlar</p>
+    <p class="p16">Click Evolution ilovasi hayotingizning ko'proq sohalarini qamrab olish, masofaviy to'lovlarni amalga oshirishda yanada ko'proq imkoniyatlarni qo'shish va qo'llashda yana ham qulay bo'lish maqsadida har doim takomillashib boradi. Ilovani yangilab turishni unutmang, ehtimol ayni shu damda sizga qulaylik baxsh etish uchun yetishmayotgan tugma paydo bo'lgan bo'lsa ajabmas.</p>
+</div>
+
+
+<div data-aos="fade-up"
+data-aos-anchor-placement="top-center" class="col-lg-3 col-12 div">
+<img src="https://click.uz/click/images/features/feat1.svg" alt>
+<p class="p22">Click ga ulaning</p>
+<p class="p16">Click tizimiga ulaning va cheksiz funktsionaldan foydalaning</p>
+</div>
+
+<div data-aos="fade-up"
+data-aos-anchor-placement="top-center" class="col-lg-3 col-12 div">
+    <img src="https://click.uz/click/images/features/feat2.svg" alt>
+
+    <p class="p22">USSD-xizmat</p>
+    <p class="p16">USSD-so'rovlar yordamida to'lovlarni amalga oshiring, hatto telefoningiz balansi salbiy bo'lganida ham.</p>
+    </div>
+    <div data-aos="fade-up"
+    data-aos-anchor-placement="top-center" class="col-lg-3 col-12 div">
+<img src="https://click.uz/click/images/features/feat3.svg" alt>
+
+        <p class="p22">Hamkor bo'ling</p>
+        <p class="p16">To'lovlarni o'z saytingizda onlayn tarzda yoki sotuv nuqtalarida Click PASS texnologiyasi orqali qabul qiling</p>
+        </div>
+        <p class="p80 mt-lg-5">Evolution yangiliklari</p>
+        <div class="d-flex flex-column">
+        <a class="a20" href="">Hammasini ko'rish </a>
+        <a class="a20" href="">Barcha aktsiyalar</a></div>
+
+</div>
+
+
+
+
+
+
+
+      </div>
+
+      <footer>
+
+        <div class="container">
+    <div class="row d-flex justify-content-lg-around  justify-content-md-around justify-content-sm-around justify-content-start">
+    <div class="col-lg-2 col-md-2 col-9">
+        <img class="footerclick" src="https://click.uz/click/images/click-evolution.svg" alt="CLICK Evolution">
+        <p class="p14 mt-lg-5">Qo'llab-quvvatlash</p>
+        <a href="">+998 71 231 0880</a>
+        <p class="p14 mt-lg-4">Umumiy savollar</p>
+        <a href="">info@click.uz</a>
+        <img class="footerdocs" src="https://click.uz/click/images/dss.png" alt ="">
+    </div>
+    <div class="col-lg-2 display">
+<h3>Xizmat haqida</h3>
+<div class="mt-lg-5">
+    <li class="footer-li">
+<a class="a15 " href="">Kompaniya haqida</a> <br></li>
+<li class="footer-li"> <a class="a15 " href="">Tizimning tavsifi va imkoniyatlari haqida</a> <br></li>
+<li class="footer-li"><a class="a15 " href="">Tariflar</a> <br></li>
+<li class="footer-li"><a class="a15 " href="">Xavfsizlik</a> <br></li>
+<li class="footer-li"><a class="a15 " href="">Bo'sh ish o'rinlari</a> <br></li>
+<li class="footer-li"><a class="a15 " href="">Ommaviy oferta</a> <br></li>
+<li class="footer-li"><a class="a15 " href="">Типовые условия договора</a> <br></li>
+<li class="footer-li"><a class="a15 " href="">Kontaktlar</a> <br></li>
+</div>
+    </div>
+
+    <div class="col-lg-3 display">
+        <h3>Yordam</h3>
+        <div class="mt-lg-5">
+            <li class="footer-li">
+        <a class="a15 " href="">«Click Evolution foydalanuvchisi uchun yo'riqnoma</a> <br></li>
+        <li class="footer-li"> <a class="a15 " href="">@clickuz Telegram-boti foydalanuvchisi uchun yo'riqnoma</a> <br></li>
+        <li class="footer-li"><a class="a15 " href="">Click USSD-menyu foydalanuvchisi uchun yo'riqnoma</a> <br></li>
+        <li class="footer-li"><a class="a15 " href="">my.click.uz veb-interfeys foydalanuvchisi uchun yo'riqnoma</a> <br></li>
+        <li class="footer-li"><a class="a15 " href="">Tez-tez so'raladigan savollar</a> <br></li>
+        <li class="footer-li"><a class="a15 " href="">Maxfiylik siyosati</a> <br></li>
+        <li class="footer-li"><a class="a15 " href="">Hamkorlarga</a> <br></li>
+        <li class="footer-li"><a class="a15 " href="">Dasturchilar uchun</a> <br></li>
+        <li class="footer-li"><a class="a15 " href="">Istak va takliflaringiz</a> <br></li>
+        </div>
+            </div>
+
+            <div class="col-lg-2 display">
+                <h3>Xizmatlar</h3>
+                <div class="mt-lg-5">
+                    <li class="footer-li">
+                <a class="a15 " href="">Click hamyon</a> <br></li>
+                <li class="footer-li"> <a class="a15 " href="">«Avtoto'lov» xizmati</a> <br></li>
+                <li class="footer-li"><a class="a15 " href="">Joylarda to'lov</a> <br></li>
+                <li class="footer-li"><a class="a15 " href="">Click Terminal</a> <br></li>
+                <li class="footer-li"><a class="a15 " href="">Telegram-bot</a> <br></li>
+                <li class="footer-li"><a class="a15 " href="">Ekspress-to'lov</a> <br></li>
+                <li class="footer-li"><a class="a15 " href="">«Hodisa» xizmati</a> <br></li>
+                <li class="footer-li"><a class="a15 " href="">«Mening kvitansiyalarim» xizmati</a> <br></li>
+                <li class="footer-li"><a class="a15 " href="">Kartadan kartaga pul o'tqazish</a> <br></li>
+                </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-2">
+                        <h3>Click Evolution</h3>
+
+                        <li class="footer-li">
+                        <a class="a15 " href="">iOS va Android egalari uchun mavjud</a> <br></li>
+                        <li class="footer-li"> <a class="a15 " href=""><img src="https://click.uz/click/images/evo1.svg" alt></a>  <br></li>
+                        <li class="footer-li"><a class="a15 " href=""><img src="https://click.uz/click/images/evo2.svg" alt></a> <br></li>
+                        <li class="footer-li"><a class="a15 " href=""><img src="https://click.uz/click/images/evo3.svg" alt></a> <br></li>
+<input type="search" name="search" placeholder="search" >
+
+                            </div>
+
+<div class="d-flex justify-content-between  mt-lg-5">
+<div class=" justify-content-between col-md-5 ">
+<li >
+    <a class="a16" href="">Facebook</a>
+
+  <a class="a16" href="">Instagram</a>
+
+  <a class="a16" href="">Telegram</a></li>
+</div>
+<a class="a15" href="">OOO "Click" © 2011-2022. Все права защищены. Лицензии МРИТИК РУз АА №0006341. Лицензия ЦБ РУз №1</a>
+</div>
+    </div>
+        </div>
+    </footer>
+    </header>
+
+
+
+
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+      <script src="./assets/lbs/js/bootstrap.min.js"></script>
+    </body>
+    </html>
